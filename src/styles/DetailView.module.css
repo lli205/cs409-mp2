@@ -1,0 +1,62 @@
+/*DetailView.module.css*/
+.wrap {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.topRow {
+	display: flex;
+	align-items: center;
+	margin-bottom: 1rem;
+	gap: 1rem;
+}
+
+.back {
+  	opacity: 0.9;
+}
+
+.spacer {
+  	flex: 1;
+}
+
+.pager {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.pager button {
+	padding: 0.4rem 0.7rem;
+	border-radius: 0.6rem;
+	border: 1px solid #333;
+	background: #171b26;
+	color: var(--txt);
+}
+
+.card {
+	display: grid;
+	gap: 1rem;
+	background: var(--card);
+	border: 1px solid #222;
+	border-radius: 1rem;
+	padding: 1rem;
+}
+
+.hero {
+	width: 100%;
+	border-radius: 0.75rem;
+}
+
+.meta h1 {
+  	margin: 0.25rem 0 1rem;
+}
+
+.meta dl {
+	display: grid;
+	grid-template-columns: 120px 1fr;
+	gap: 0.5rem 1rem;
+	margin: 0;
+}
+
+.meta dt {
+  	color: var(--muted);
+}

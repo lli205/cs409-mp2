@@ -1,0 +1,68 @@
+/* GalleryView.module.css */
+.wrap {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.filters {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin: 0.5rem 0 1rem;
+}
+
+.checkbox {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 1rem;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	background: var(--card);
+	border: 1px solid #222;
+	border-radius: 1rem;
+	overflow: hidden;
+	transition: transform 0.1s;
+}
+
+.card:hover {
+	transform: translateY(-2px);
+}
+
+.card img {
+	width: 100%;
+	height: 260px;
+	object-fit: cover;
+	background: #0e1118;
+}
+
+.placeholder {
+	display: grid;
+	place-items: center;
+	height: 260px;
+	color: var(--muted);
+	background: #0e1118;
+}
+
+.caption {
+	padding: 0.75rem;
+	border-top: 1px solid #222;
+}
+
+.caption strong {
+	isplay: block;
+}
+
+.caption span {
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+  

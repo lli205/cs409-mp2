@@ -1,0 +1,61 @@
+/* ListView.module.css */
+.wrap {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.controls {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin: 0.5rem 0 1rem;
+}
+
+.search {
+	flex: 1;
+	padding: 0.6rem 0.8rem;
+	border-radius: 0.75rem;
+	border: 1px solid #2b3140;
+	background: #0e1118;
+	color: var(--txt);
+}
+
+.sortRow {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.error {
+	padding: 0.5rem 0.75rem;
+	background: #3a1a1a;
+	border: 1px solid #512020;
+	border-radius: 0.75rem;
+}
+
+.list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	gap: 0.5rem;
+}
+
+.row {
+	background: var(--card);
+	border: 1px solid #222;
+	border-radius: 0.9rem;
+}
+
+.link {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.85rem 1rem;
+}
+
+.meta {
+	color: var(--muted);
+	font-size: 0.9rem;
+}
+  

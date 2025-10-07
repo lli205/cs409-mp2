@@ -1,0 +1,43 @@
+/*App.module.css*/
+
+.app{
+	min-height:100%;
+	display:grid;
+	grid-template-rows:auto 1fr auto
+}
+
+.header{
+	display:flex;
+	gap:2rem;
+	align-items:center;
+	justify-content:space-between;
+	padding:1rem 1.25rem;
+	background:#0b0d12;
+	border-bottom:1px solid #222;
+	font-size: 1.25rem;
+}
+
+.brand{
+	font-weight:700;
+	letter-spacing:.5px
+}
+
+.nav a{
+	margin-right:1rem;
+	opacity:.8
+}
+
+.active{
+	opacity:1;
+	border-bottom:2px solid var(--accent)
+}
+
+.main{
+	padding:1.25rem
+}
+
+.footer{
+	padding:1rem 1.25rem;
+	border-top:1px solid #222;
+	color:var(--muted)
+}

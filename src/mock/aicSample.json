@@ -1,0 +1,23 @@
+[
+	{
+	  "id": 27992,
+	  "title": "The Bedroom",
+	  "artist_title": "Vincent van Gogh",
+	  "date_display": "1889",
+	  "image_id": null,
+	  "department_title": "Painting and Sculpture of Europe",
+	  "classification_title": "Painting",
+	  "fallback": "/fallback/bedroom.jpg"
+	},
+	{
+	  "id": 146406,
+	  "title": "Water Lilies",
+	  "artist_title": "Claude Monet",
+	  "date_display": "1906",
+	  "image_id": null,
+	  "department_title": "Painting and Sculpture of Europe",
+	  "classification_title": "Painting",
+	  "fallback": "/fallback/waterlilies.jpg"
+	}
+  ]
+  
