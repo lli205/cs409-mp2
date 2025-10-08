@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import { fetchArtworksPages, firstImageId, imageUrlFor } from "../api/aic";
 import type { Artwork } from "../types";
 import styles from "../styles/GalleryView.module.css";
+import { useLocalCache } from "../hooks/useLocalCache";
+import type { CachedList } from "../types";
 
 export default function GalleryView() {
 	const [items, setItems] = useState<Artwork[]>([]);
@@ -39,6 +41,9 @@ export default function GalleryView() {
 			return true;
 		});
 	}, [items, onlyHasImage, filterDept]);
+
+	const cached: CachedList = { ids: visible.map(i => i.id), when: Date.now() };
+	useLocalCache("lastIds", cached);
 
 	return (
 		<section className={styles.wrap}>
