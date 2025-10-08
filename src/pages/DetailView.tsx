@@ -1,6 +1,6 @@
 //DetailView.tsx
 import { useEffect, useMemo, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { fetchArtwork, imageUrlFor } from "../api/aic";
 import type { Artwork, CachedList } from "../types";
 import styles from "../styles/DetailView.module.css";
