@@ -46,12 +46,18 @@ export default function DetailView() {
 	return (
 		<section className={styles.wrap}>
 		<div className={styles.topRow}>
-			<Link to={-1 as any} className={styles.back}>← Back</Link>
+			{/* <Link to={-1 as any} className={styles.back}>← Back</Link> */}
+			{/* <div className={styles.spacer} /> */}
+			<div className={styles.pager}>
+				<button disabled={!prevId} onClick={() => prevId && navigate(`/art/${prevId}`)}>⟵ Prev</button>
+				{/* <button disabled={!nextId} onClick={() => nextId && navigate(`/art/${nextId}`)}>Next ⟶</button> */}
+			</div>
 			<div className={styles.spacer} />
 			<div className={styles.pager}>
-			<button disabled={!prevId} onClick={() => prevId && navigate(`/art/${prevId}`)}>⟵ Prev</button>
-			<button disabled={!nextId} onClick={() => nextId && navigate(`/art/${nextId}`)}>Next ⟶</button>
+				{/* <button disabled={!prevId} onClick={() => prevId && navigate(`/art/${prevId}`)}>⟵ Prev</button> */}
+				<button disabled={!nextId} onClick={() => nextId && navigate(`/art/${nextId}`)}>Next ⟶</button>
 			</div>
+
 		</div>
 
 		<article className={styles.card}>
